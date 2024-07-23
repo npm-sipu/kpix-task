@@ -12,7 +12,7 @@ const Header: React.FC = () => {
         <div className='relative px-4 border-r'>
           <img
             src='/public/searchIcon.svg'
-            className='absolute h-5 w-5 top-2 left-3'
+            className='absolute h-5 w-5 top-3 left-[1.75rem]'
           />
           <input
             type='text'

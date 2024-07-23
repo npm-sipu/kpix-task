@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 interface SidebarProps {
   isOpen: boolean;
@@ -30,46 +31,72 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
         />
       </div>
       <nav className='flex-grow p-4'>
-        <button
-          className={`flex items-center gap-2 w-full text-left py-2 px-4 rounded-md hover:bg-gray-700 ${
+        <NavLink
+          to='#'
+          className={`flex items-center gap-2 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${
             show ? "" : "justify-end"
           }`}
         >
-          <img src='../src/assets/react.svg' className='w-5 h-5' />
-          {show ? "Data" : ""}
-        </button>
-        <button
-          className={`flex items-center gap-2 w-full text-left py-2 px-4 rounded-md hover:bg-gray-700 ${
+          <img src='/public/Dashboard.svg' className='w-[48px] h-[48px]' />
+          {show ? "Dashboard" : ""}
+        </NavLink>
+        <NavLink
+          to='#'
+          className={`flex items-center gap-3 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${
             show ? "" : "justify-end"
           }`}
         >
-          <img src='../src/assets/react.svg' className='w-5 h-5' />
-          {show ? "Data" : ""}
-        </button>
-        <button
-          className={`flex items-center gap-2 w-full text-left py-2 px-4 rounded-md hover:bg-gray-700 ${
+          <img src='/public/Logical Assets.svg' className='w-[48px] h-[48px]' />
+          {show ? "Logical Assets" : ""}
+        </NavLink>
+        <NavLink
+          to='#'
+          className={`flex items-center gap-3 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${
             show ? "" : "justify-end"
           }`}
         >
-          <img src='../src/assets/react.svg' className='w-5 h-5' />
-          {show ? "Data" : ""}
-        </button>
-        <button
-          className={`flex items-center gap-2 w-full text-left py-2 px-4 rounded-md hover:bg-gray-700 ${
+          <img
+            src='/public/Data Visualisation.svg'
+            className='w-[48px] h-[48px]'
+          />
+          {show ? "Data Visualisation" : ""}
+        </NavLink>
+        <NavLink
+          to='#'
+          className={`flex items-center gap-3 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${
             show ? "" : "justify-end"
           }`}
         >
-          <img src='../src/assets/react.svg' className='w-5 h-5' />
-          {show ? "Data" : ""}
-        </button>
-        <button
-          className={`flex items-center gap-2 w-full text-left py-2 px-4 rounded-md hover:bg-gray-700 ${
+          <img src='/public/Assets.svg' className='w-[48px] h-[48px]' />
+          {show ? "Assets" : ""}
+        </NavLink>
+        <NavLink
+          to='#'
+          className={`flex items-center gap-3 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${
             show ? "" : "justify-end"
           }`}
         >
-          <img src='../src/assets/react.svg' className='w-5 h-5' />
-          {show ? "Data" : ""}
-        </button>
+          <img src='/public/Modelling.svg' className='w-[48px] h-[48px]' />
+          {show ? "Modelling" : ""}
+        </NavLink>
+        <NavLink
+          to='#'
+          className={`flex items-center gap-3 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${
+            show ? "" : "justify-end"
+          }`}
+        >
+          <img src='/public/Reports.svg' className='w-[48px] h-[48px]' />
+          {show ? "Reports" : ""}
+        </NavLink>
+        <NavLink
+          to='#'
+          className={`flex items-center gap-3 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${
+            show ? "" : "justify-end"
+          }`}
+        >
+          <img src='/public/Job Campaign.svg' className='w-[48px] h-[48px]' />
+          {show ? "Job Campaign" : ""}
+        </NavLink>
       </nav>
     </div>
   );
