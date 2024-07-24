@@ -1,4 +1,5 @@
 import React from "react";
+import Cards from "./Cards";
 
 const DataVisualization: React.FC = () => {
   const cards = [
@@ -126,7 +127,7 @@ const DataVisualization: React.FC = () => {
 
   return (
     <div
-      className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 overflow-scroll gap-4 px-4'
+      className=' overflow-scroll'
       style={{
         scrollBehavior: "smooth",
         scrollbarWidth: "none",
@@ -134,25 +135,17 @@ const DataVisualization: React.FC = () => {
         height: "calc(100vh - 128px)",
       }}
     >
-      {cards.map((card) => (
-        <div key={card.id} className='bg-white rounded-lg shadow-md px-4'>
-          <h3 className='text-xl font-semibold'>{card.name}</h3>
-          <p>Status: {card.status}</p>
-          <p>Location: {card.location}</p>
-          <div className='flex justify-between mt-4'>
-            <button className='bg-blue-500 text-white py-1 px-4 rounded'>
-              Live Data
-            </button>
-            <button className='bg-blue-500 text-white py-1 px-4 rounded'>
-              Historical Data
-            </button>
-            <button className='bg-blue-500 text-white py-1 px-4 rounded'>
-              Live Alerts
-            </button>
-          </div>
+      <div className='p-4'>
+        <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+          {cards.map((card) => (
+            <div key={card.id}>
+              <Cards />
+            </div>
+          ))}
         </div>
-      ))}
+      </div>
     </div>
+    // <Cards />
   );
 };
 
