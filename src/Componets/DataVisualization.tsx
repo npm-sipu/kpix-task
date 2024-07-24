@@ -145,7 +145,6 @@ const DataVisualization: React.FC = () => {
         </div>
       </div>
     </div>
-    // <Cards />
   );
 };
 
