@@ -21,7 +21,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
     >
       <div
         onClick={toggleSidebar}
-        className={`flex items-center justify-between  ${
+        className={`flex items-center max-lg:hidden justify-between  ${
           isOpen ? "rotate-180" : ""
         } p-4 absolute z-10 -right-[26px]`}
       >
@@ -30,7 +30,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
           className='h-[20px] w-[20px] rounded-full bg-white cursor-pointer'
         />
       </div>
-      <nav className='flex-grow p-4'>
+      <nav className='flex-grow p-4 max-lg:p-2'>
         <NavLink
           to='#'
           className={`flex items-center gap-2 w-full text-left py-2 px-4 text-[#383838] hover:text-[#005932] font-[500] text-[14px] rounded-md  ${

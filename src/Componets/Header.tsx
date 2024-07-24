@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         </NavLink>
       </div>
       <div className='flex flex-1 justify-end items-center'>
-        <div className='relative px-4 border-r'>
+        <div className='relative max-md:hidden px-4 border-r'>
           <img
             src='/public/searchIcon.svg'
             className='absolute h-5 w-5 top-3 left-[1.75rem]'

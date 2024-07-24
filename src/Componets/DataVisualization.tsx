@@ -130,9 +130,9 @@ const DataVisualization: React.FC = () => {
       className=' overflow-scroll'
       style={{
         scrollBehavior: "smooth",
-        scrollbarWidth: "none",
+        scrollbarWidth: "none", //if you want to add scroll bar remove this line only
         msOverflowStyle: "none",
-        height: "calc(100vh - 128px)",
+        height: "calc(100vh - 130px)",
       }}
     >
       <div className='p-4'>
