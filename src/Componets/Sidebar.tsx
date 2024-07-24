@@ -16,18 +16,18 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen, toggleSidebar }) => {
   return (
     <div
       className={`fixed inset-y-0  transition-transform transform ${
-        isOpen ? "translate-x-0  left-0" : "-translate-x-full left-20"
+        isOpen ? "translate-x-0  left-0" : "-translate-x-full left-24"
       } w-64 text-white flex flex-col z-50 relative border-r border-gray-400`}
     >
       <div
         onClick={toggleSidebar}
-        className={`flex items-center justify-between ${
+        className={`flex items-center justify-between  ${
           isOpen ? "rotate-180" : ""
-        } p-4 absolute z-10 -right-[24px]`}
+        } p-4 absolute z-10 -right-[26px]`}
       >
         <img
           src='/public/sidebarArrow.svg'
-          className='h-[20px] w-[20px] rounded-full'
+          className='h-[20px] w-[20px] rounded-full bg-white cursor-pointer'
         />
       </div>
       <nav className='flex-grow p-4'>
