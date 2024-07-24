@@ -1,7 +1,12 @@
+import LoginSideScreen from "../Componets/LoginSideScreen";
+
 const Login = () => {
   return (
-    <div className='w-full bg-green-500'>
-      <h1 className='text-3xl font-bold text-yellow-400'>Hello world!</h1>
+    <div className='w-full h-screen flex'>
+      <div className='w-[523px]'>Login</div>
+      <div className='flex-1'>
+        <LoginSideScreen />
+      </div>
     </div>
   );
 };
