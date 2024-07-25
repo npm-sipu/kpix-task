@@ -1,3 +1,5 @@
+import Carousel from "./Ui/Carousel";
+
 const LoginSideScreen = () => {
   return (
     <div className='w-full bg-gradient-to-r from-[#005932] to-[#00BF6B] h-screen'>
@@ -9,6 +11,9 @@ const LoginSideScreen = () => {
         machinery/equipment to larger entities like buildings, allowing for
         comprehensive asset digitalization.
       </p>
+      <div className='flex justify-center items-center'>
+        <Carousel />
+      </div>
     </div>
   );
 };
