@@ -31,7 +31,7 @@ const PasswordInput: React.FC<PasswordInputProps> = ({
       <img
         src='/Show password.svg'
         alt='Show password'
-        className='absolute top-3.5 right-2'
+        className='absolute top-3.5 right-2 cursor-pointer'
         onClick={toggleShowPassword}
       />
       <input

@@ -1,7 +1,7 @@
 const LoginFooter = () => {
   return (
-    <div>
-      <p>©2024 Kemsys Inc. All rights reserved.</p>
+    <div className='w-full absolute bottom-0 flex justify-center items-center'>
+      <p className='py-3'>©2024 Kemsys Inc. All rights reserved.</p>
     </div>
   );
 };
