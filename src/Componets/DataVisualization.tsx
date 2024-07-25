@@ -4,124 +4,124 @@ import Cards from "./Cards";
 const DataVisualization: React.FC = () => {
   const cards = [
     {
-      id: 1,
+      id: "e476671",
       name: "PMT-2020",
       status: "Connected",
-      location: "Salt Lake City",
+      location: "Med IoT / USA / Utah / Salt Lake City",
     },
     {
-      id: 2,
+      id: "e476672",
       name: "PMT-2021",
       status: "Connected",
-      location: "Salt Lake City",
+      location: "Med IoT / USA / Utah / Salt Lake City",
     },
     {
-      id: 3,
+      id: "e476673",
       name: "PMT-2022",
       status: "Connected",
-      location: "Salt Lake City",
+      location: "Med IoT / USA / Utah / Salt Lake City",
     },
     {
-      id: 4,
-      name: "PMT-2020",
-      status: "Connected",
-      location: "Salt Lake City",
-    },
-    {
-      id: 5,
-      name: "PMT-2021",
-      status: "Connected",
-      location: "Salt Lake City",
-    },
-    {
-      id: 6,
-      name: "PMT-2022",
-      status: "Connected",
-      location: "Salt Lake City",
-    },
-    {
-      id: 7,
-      name: "PMT-2020",
-      status: "Connected",
-      location: "Salt Lake City",
-    },
-    {
-      id: 8,
-      name: "PMT-2021",
-      status: "Connected",
-      location: "Salt Lake City",
-    },
-    {
-      id: 9,
-      name: "PMT-2022",
-      status: "Connected",
-      location: "Salt Lake City",
-    },
-    {
-      id: 10,
+      id: "e476674",
       name: "PMT-2023",
       status: "Disconnected",
-      location: "New York",
+      location: "Med IoT / USA / New York / New York",
     },
     {
-      id: 11,
+      id: "e476675",
       name: "PMT-2024",
       status: "Connected",
-      location: "Los Angeles",
+      location: "Med IoT / USA / California / Los Angeles",
     },
     {
-      id: 12,
+      id: "e476676",
       name: "PMT-2025",
       status: "Disconnected",
-      location: "Chicago",
+      location: "Med IoT / USA / Illinois / Chicago",
     },
     {
-      id: 13,
+      id: "e476677",
       name: "PMT-2026",
       status: "Connected",
-      location: "Houston",
+      location: "Med IoT / USA / Texas / Houston",
     },
     {
-      id: 14,
+      id: "e476678",
       name: "PMT-2027",
       status: "Disconnected",
-      location: "Phoenix",
+      location: "Med IoT / USA / Arizona / Phoenix",
     },
     {
-      id: 15,
+      id: "e476679",
       name: "PMT-2028",
       status: "Connected",
-      location: "Philadelphia",
+      location: "Med IoT / USA / Pennsylvania / Philadelphia",
     },
     {
-      id: 16,
+      id: "e476680",
       name: "PMT-2029",
       status: "Connected",
-      location: "San Antonio",
+      location: "Med IoT / USA / Texas / San Antonio",
     },
     {
-      id: 17,
+      id: "e476681",
       name: "PMT-2030",
       status: "Disconnected",
-      location: "San Diego",
+      location: "Med IoT / USA / California / San Diego",
     },
     {
-      id: 18,
+      id: "e476682",
       name: "PMT-2031",
       status: "Connected",
-      location: "Dallas",
+      location: "Med IoT / USA / Texas / Dallas",
     },
     {
-      id: 19,
+      id: "e476683",
       name: "PMT-2032",
       status: "Disconnected",
-      location: "San Jose",
+      location: "Med IoT / USA / California / San Jose",
     },
     {
-      id: 20,
+      id: "e476684",
       name: "PMT-2033",
       status: "Connected",
-      location: "Austin",
+      location: "Med IoT / USA / Texas / Austin",
+    },
+    {
+      id: "e476685",
+      name: "PMT-2034",
+      status: "Connected",
+      location: "Med IoT / USA / Florida / Jacksonville",
+    },
+    {
+      id: "e476686",
+      name: "PMT-2035",
+      status: "Disconnected",
+      location: "Med IoT / USA / Ohio / Columbus",
+    },
+    {
+      id: "e476687",
+      name: "PMT-2036",
+      status: "Connected",
+      location: "Med IoT / USA / North Carolina / Charlotte",
+    },
+    {
+      id: "e476688",
+      name: "PMT-2037",
+      status: "Disconnected",
+      location: "Med IoT / USA / Michigan / Detroit",
+    },
+    {
+      id: "e476689",
+      name: "PMT-2038",
+      status: "Connected",
+      location: "Med IoT / USA / Washington / Seattle",
+    },
+    {
+      id: "e476690",
+      name: "PMT-2039",
+      status: "Disconnected",
+      location: "Med IoT / USA / Massachusetts / Boston",
     },
   ];
 
@@ -139,7 +139,12 @@ const DataVisualization: React.FC = () => {
         <div className='grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
           {cards.map((card) => (
             <div key={card.id}>
-              <Cards />
+              <Cards
+                PIoT={card.name}
+                ID={card.id.toString()}
+                Status={card.status}
+                Hierarchy={card.location}
+              />
             </div>
           ))}
         </div>
