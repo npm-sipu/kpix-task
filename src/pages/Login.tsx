@@ -3,7 +3,7 @@ import LoginSideScreen from "../Componets/LoginSideScreen";
 
 const Login = () => {
   return (
-    <div className='w-full h-screen flex max-lg:flex-col'>
+    <div className='w-full h-screen bg-white flex max-lg:flex-col'>
       <div className='lg:w-[35%] w-full'>
         <LoginForm />
       </div>

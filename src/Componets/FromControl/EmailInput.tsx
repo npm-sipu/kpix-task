@@ -16,16 +16,22 @@ const EmailInput: React.FC<EmailInputProps> = ({
   };
 
   return (
-    <div>
-      <label htmlFor='email'>Email:</label>
+    <div className='w-full relative'>
+      <img
+        src='/email.svg'
+        alt='email icon'
+        className='absolute top-3.5 left-2'
+      />
       <input
         type='email'
         id='email'
         value={email}
         onChange={handleChange}
         required
+        placeholder='Email'
+        className='border w-full border-gray-400 text-lg outline-gray-500 rounded-md placeholder:text-lg py-3 px-12'
       />
-      {error && <p style={{ color: "red" }}>{error}</p>}
+      {error && <p className='text-red-500'>{error}</p>}
     </div>
   );
 };

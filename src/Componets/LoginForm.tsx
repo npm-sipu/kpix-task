@@ -53,7 +53,10 @@ const LoginForm: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form
+      onSubmit={handleSubmit}
+      className='flex flex-col border-b border-gray-300 gap-6 items-center py-6'
+    >
       <EmailInput
         email={email}
         onEmailChange={handleEmailChange}
@@ -64,7 +67,16 @@ const LoginForm: React.FC = () => {
         onPasswordChange={handlePasswordChange}
         error={passwordError}
       />
-      <button type='submit'>Submit</button>
+      <button
+        type='submit'
+        className='bg-[#4423B1] w-full text-white py-3.5 rounded-3xl font-medium'
+      >
+        Login
+      </button>
+
+      <a className='text-black font-medium' href='#'>
+        Forgot Password?
+      </a>
     </form>
   );
 };
